@@ -119,4 +119,4 @@ mvn spring-boot:run
 
 Here is the main dashboard of the system:
 
-![Dashboard](file_00000000945072089ad4eaf285fecd86)
+![Dashboard](https://github.com/vkfullstack/Employee-Registration-Login-System-Spring-Boot-/blob/main/Screenshot%202026-05-02%20102031.png?raw=true)
