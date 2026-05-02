@@ -52,7 +52,7 @@ src/main/java
 
 ## 🔐 Login Page
 
-![Login Page](./login.png)
+![Login Page](https://github.com/vkfullstack/Employee-Registration-Login-System-Spring-Boot-/blob/main/Screenshot%202026-05-02%20102322.png?raw=true)
 
 ---
 
