@@ -64,7 +64,7 @@ src/main/java
 
 ## 👤 Profile Page
 
-![Profile Page](./profile.png)
+![Profile Page](https://github.com/vkfullstack/Employee-Registration-Login-System-Spring-Boot-/blob/main/Screenshot%202026-05-02%20102301.png?raw=true)
 
 ---
 
