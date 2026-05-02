@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Form</title>
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-box {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #4facfe;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #00c6ff;
+            transform: scale(1.03);
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+	  /* Message Styling */
+	     .msg {
+	         width: 350px;
+	         padding: 10px;
+	         margin-bottom: 10px;
+	         text-align: center;
+	         border-radius: 8px;
+	         font-weight: bold;
+	         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	     }
+
+	     .success {
+	         background-color: #d4edda;
+	         color: #155724;
+	         border-left: 5px solid #28a745;
+	     }
+
+	     .error {
+	         background-color: #f8d7da;
+	         color: #721c24;
+	         border-left: 5px solid #dc3545;
+	     }
+	     /* Footer Links */
+	           .links {
+	               margin-top: 15px;
+	               text-align: center;
+	           }
+
+	           .links a {
+	               text-decoration: none;
+	               padding: 8px 15px;
+	               margin: 5px;
+	               display: inline-block;
+	               border-radius: 6px;
+	               font-weight: bold;
+	               transition: 0.3s;
+	           }
+
+	           .home {
+	               background: #28a745;
+	               color: white;
+	           }
+
+	           .home:hover {
+	               background: #218838;
+	           }
+
+	           .login {
+	               background: #007bff;
+	               color: white;
+	           }
+
+	           .login:hover {
+	               background: #0056b3;
+	           }
+
+    </style>
+</head>
+
+<body>
+	<div th:if="${success}" class="msg success">
+		<h3  th:text="${success}"></h3>
+	</div>
+	<div th:if="${Error}" class="msg error">
+			<h3 th:text="${Error}"></h3>
+		</div>
+
+<div class="form-box">
+
+    <h2>Register Here</h2>
+
+    <form  th:action="@{/regform}" th:object="${employee}" method="post">
+
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter name" th:field="*{name}">
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter email" th:fieldt="*{email}">
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" th:field="*{password}">
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</div>
+<div class="links">
+    <a href="/" class="home">Home</a>
+    <a href="/login" class="login">Login</a>
+</div>
+</body>
+</html>
