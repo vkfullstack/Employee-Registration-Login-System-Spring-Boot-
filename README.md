@@ -44,9 +44,9 @@ src/main/java
 
 ### 🏠 Home Page (Index)
 
-![Home Page](./home.png)
+![Home Page](https://github.com/vkfullstack/Employee-Registration-Login-System-Spring-Boot-/blob/main/Screenshot%202026-05-02%20102031.png?raw=true)
 
-*(Replace `home.png` with your actual screenshot file name)*
+
 
 ---
 
